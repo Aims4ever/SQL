@@ -1,0 +1,11 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, sold INTEGER, stock INTEGER);
+INSERT into store VALUES (1, "artwork", 500, 2, 15);
+INSERT into store VALUES (2, "picture_frames", 20, 10, 5);
+INSERT into store VALUES (3, "paint", 10, 50, 20);
+INSERT into store VALUES (4, "pencil", 1, 100, 500);
+
+SELECT * FROM store ORDER BY price;
+SELECT SUM (sold) FROM store;
+
+create table containing 4 items sold at store along with item name, price, the amount sold, and the amount in stock
+table is ordered by cost of item and the shows the sum of items sold
